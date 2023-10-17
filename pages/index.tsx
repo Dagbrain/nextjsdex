@@ -11,9 +11,8 @@ const LiFiWidgetDynamic = dynamic(
 
 const Home: NextPage = () => {
   return (
-    <LiFiWidgetDynamic 
+    <LiFiWidgetDynamic integrator="PylonDEX"
       config={{
-        integrator: "PylonDEX",
         fee: 0.01,
         fromChain: 137,
         toChain:137,
