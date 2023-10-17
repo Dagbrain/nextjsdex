@@ -14,7 +14,6 @@ const Home: NextPage = () => {
     <LiFiWidgetDynamic integrator="PylonDEX"
       config={{
         containerStyle: {
-          fee: 0.01,
           width: 392,
           height: 640,
           border: `1px solid rgb(234, 234, 234)`,
