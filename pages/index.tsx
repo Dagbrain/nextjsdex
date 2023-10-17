@@ -11,8 +11,12 @@ const LiFiWidgetDynamic = dynamic(
 
 const Home: NextPage = () => {
   return (
-    <LiFiWidgetDynamic integrator="PylonDEX"
+    <LiFiWidgetDynamic 
       config={{
+        integrator: "PylonDEX",
+        fee: 0.01,
+        fromChain: 137,
+        toChain:137,
         containerStyle: {
           width: 392,
           height: 640,
@@ -20,7 +24,26 @@ const Home: NextPage = () => {
           borderRadius: '16px',
           display: 'flex',
           maxWidth: 392,
+          boxShadow: '0 5px 15px 0 rgba(14, 245, 6, 0.425)',
         },
+        theme: {
+            palette: {
+              primary: { main: 'rgba(14, 245, 6, 0.425)' },
+              secondary: { main: 'rgba(14, 245, 6, 0.425)' },
+            },
+            shape: {
+              borderRadius: 16,
+              borderRadiusSecondary: 16,
+              boxShadow: '0 5px 15px 0 rgba(14, 245, 6, 0.425)',
+            },
+            typography: {
+              fontFamily: 'Comic Sans MS',
+            },
+          },
+          appearance: 'dark',
+          hiddenUI: ['appearance'],
+          variant: 'expandable',
+          subvariant: 'split',
       }}
     />
   );
