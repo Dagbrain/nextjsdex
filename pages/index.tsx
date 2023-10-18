@@ -1,6 +1,7 @@
 import type { LiFiWidget } from '@lifi/widget';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
+import styles from '../styles/Home.module.css'
 
 const LiFiWidgetDynamic = dynamic(
   () => import('@lifi/widget').then((module) => module.LiFiWidget) as any,
@@ -11,6 +12,11 @@ const LiFiWidgetDynamic = dynamic(
 
 const Home: NextPage = () => {
   return (
+    <main>
+      <div className={styles.title}>
+        <h1>PylonDEX</h1>
+      </div>
+      <div className={styles.Widget}>
     <LiFiWidgetDynamic integrator="PylonDEX"
       config={{
         fee: 0.01,
@@ -45,6 +51,8 @@ const Home: NextPage = () => {
           subvariant: 'split',
       }}
     />
+     </div>
+    </main>
   );
 };
 

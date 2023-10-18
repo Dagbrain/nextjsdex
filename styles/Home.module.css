@@ -1,15 +1,36 @@
 .container {
     padding: 0 2rem;
   }
-  
-  .main {
-    min-height: 100vh;
-    padding: 4rem 0;
-    flex: 1;
+
+  .Widget {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .VideoBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+  
+  }
+
+  .gradient-text-0 {
+    background: -webkit-linear-gradient(#00e600, #008000, #035303);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
   }
   
   .footer {
@@ -40,9 +61,18 @@
   }
   
   .title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 4rem;
+    background: -webkit-linear-gradient(#00e600, #008000, #003300);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
   }
   
   .title,
