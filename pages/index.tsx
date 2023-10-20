@@ -23,8 +23,8 @@ const Home: NextPage = () => {
         fromChain: 137,
         toChain:137,
         containerStyle: {
-          width: 392,
-          height: 640,
+          width: 350,
+          height: 600,
           border: `0px solid rgb(234, 234, 234)`,
           borderRadius: '16px',
           display: 'flex',
