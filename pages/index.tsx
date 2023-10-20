@@ -16,8 +16,8 @@ const Home: NextPage = () => {
       <div className={styles.title}>
         <h1>PylonDEX</h1>
       </div>
-      <div className={styles.Widget}>
-    <LiFiWidgetDynamic integrator="PylonDEX"
+    <div className={styles.Widget}>
+     <LiFiWidgetDynamic integrator="PylonDEX"
       config={{
         fee: 0.01,
         fromChain: 137,
