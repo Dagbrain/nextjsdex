@@ -1,5 +1,6 @@
 .container {
-    padding: 0 1rem;
+    padding: 0;
+    margin: 0;
   }
 
   .Widget {
