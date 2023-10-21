@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         toChain:137,
         containerStyle: {
           width: 350,
-          height: 650,
+          height: 590,
           border: `0px solid rgb(234, 234, 234)`,
           borderRadius: '16px',
           display: 'flex',
