@@ -2,6 +2,8 @@ import type { LiFiWidget } from '@lifi/widget';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import styles from '../styles/Home.module.css'
+import Image from 'next/image';
+import pylondex from '../public/pylondex.jpg'
 
 const LiFiWidgetDynamic = dynamic(
   () => import('@lifi/widget').then((module) => module.LiFiWidget) as any,
@@ -24,7 +26,7 @@ const Home: NextPage = () => {
         toChain:137,
         containerStyle: {
           width: 350,
-          height: 600,
+          height: 650,
           border: `0px solid rgb(234, 234, 234)`,
           borderRadius: '16px',
           display: 'flex',
@@ -51,6 +53,9 @@ const Home: NextPage = () => {
           subvariant: 'split',
       }}
     />
+        <p className={styles.description}>
+          Your Gateway to the Decentralized World
+        </p>
      </div>
     </main>
   );
