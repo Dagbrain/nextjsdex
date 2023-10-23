@@ -41,7 +41,7 @@ const Home: NextPage = () => {
             shape: {
               borderRadius: 16,
               borderRadiusSecondary: 16,
-              boxShadow: '0 5px 15px 0 rgba(14, 245, 6, 0.425)',
+              boxShadow: '0 25px 25px 0 rgba(14, 245, 6, 0.425)',
             },
             typography: {
               fontFamily: 'Comic Sans MS',
