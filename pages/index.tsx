@@ -2,8 +2,6 @@ import type { LiFiWidget } from '@lifi/widget';
 import type { NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import styles from '../styles/Home.module.css'
-import Image from 'next/image';
-import pylondex from '../public/pylondex.jpg'
 
 const LiFiWidgetDynamic = dynamic(
   () => import('@lifi/widget').then((module) => module.LiFiWidget) as any,
